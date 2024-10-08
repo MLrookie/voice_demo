@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>语音Demo展示</title>
+</head>
+<body>
+    <h1>欢迎来到语音Demo展示页面</h1>
+    <button id="speakBtn">点击播放语音</button>
+    <script>
+        // 语音demo的JavaScript代码
+        document.getElementById('speakBtn').addEventListener('click', function() {
+            var msg = new SpeechSynthesisUtterance('这是一个语音演示');
+            window.speechSynthesis.speak(msg);
+        });
+    </script>
+</body>
+</html>
